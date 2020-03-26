@@ -1,11 +1,27 @@
 import React from 'react';
-import { AppBar } from '@material-ui/core';
+import {
+	AppBar,
+	Toolbar,
+	List,
+	ListItem,
+	ListItemText,
+	IconButton,
+	Avatar,
+	Divider,
+	Typography,
+	Box,
+} from '@material-ui/core';
+import { ArrowBack, AssignmentInd, Home, Apps, ContactMail } from '@material-ui/icons';
 
 export const Navbar: React.FC = () => {
 	return (
-		<div>
-			<h2>Navbar Component o/</h2>
-		</div>
+		<Box component='nav'>
+			<AppBar>
+				<Toolbar>
+					<ArrowBack />
+				</Toolbar>
+			</AppBar>
+		</Box>
 	);
 };
 
