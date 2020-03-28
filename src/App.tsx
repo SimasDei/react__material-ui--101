@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		'flex-direction': 'column',
 		height: '100vh',
-		width: '100wv',
+		width: '100vw',
 		background: `url(${coffeeApple}) no-repeat center center fixed`,
 	},
 });
