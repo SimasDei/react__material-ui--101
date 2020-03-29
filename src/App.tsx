@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import coffeeApple from './assets/coffee-apple.jpg';
 
 import Home from './components';
+import Resume from './components/resume';
 
 const useStyles = makeStyles({
 	app__container: {
