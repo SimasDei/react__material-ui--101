@@ -1,11 +1,12 @@
 import React from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { Route } from 'react-router-dom';
 
 import coffeeApple from './assets/coffee-apple.jpg';
 
 import Home from './components';
-import Resume from './components/resume';
+import Resume from './components/resume/Resume';
 
 const useStyles = makeStyles({
 	app__container: {
@@ -22,7 +23,8 @@ export const App: React.FC = () => {
 	return (
 		<div className={`${classes.app__container} App`}>
 			<CssBaseline />
-			<Home />
+			<Route exact path='/' component={Home} />
+			<Route path='/resume' component={Resume} />
 		</div>
 	);
 };

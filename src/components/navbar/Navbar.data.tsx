@@ -35,17 +35,21 @@ export const menuItems = [
 	{
 		listIcon: <Home />,
 		listText: 'Home',
+		listPath: '/',
 	},
 	{
 		listIcon: <AssignmentInd />,
 		listText: 'Resume',
+		listPath: '/resume',
 	},
 	{
 		listIcon: <Apps />,
 		listText: 'Portfolio',
+		listPath: '/portfolio',
 	},
 	{
 		listIcon: <ContactMail />,
 		listText: 'Contacts',
+		listPath: '/contacts',
 	},
 ];

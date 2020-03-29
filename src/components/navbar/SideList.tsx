@@ -8,6 +8,7 @@ import {
 	Divider,
 	Box,
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import { useStyles, menuItems } from './Navbar.data';
 
@@ -22,7 +23,12 @@ export const SideList: React.FC = () => {
 			<Divider />
 			<List>
 				{menuItems.map(menuItem => (
-					<ListItem button key={menuItem.listText} className={classes.navbar__slider__item}>
+					<ListItem
+						button
+						key={menuItem.listText}
+						className={classes.navbar__slider__item}
+						component={Link}
+						to={menuItem.listPath}>
 						<ListItemIcon className={classes.navbar__slider__icon}>
 							{menuItem.listIcon}
 						</ListItemIcon>
